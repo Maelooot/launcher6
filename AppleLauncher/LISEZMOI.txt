@@ -1,0 +1,11 @@
+COMPILER L'APK SANS ANDROID STUDIO
+1. Cree un compte sur github.com (gratuit) puis un nouveau depot (New repository).
+2. Clique "uploading an existing file" et glisse TOUT le contenu de ce dossier
+   (y compris le dossier .github).
+3. Onglet Actions > "Build APK" > attends ~3 minutes.
+4. Ouvre l'execution terminee > Artifacts > telecharge AppleLauncher-apk (zip) > extrais app-debug.apk.
+
+INSTALLER SUR LA FIRE TV
+adb connect IP_DE_LA_FIRE_TV:5555
+adb install app-debug.apk
+Puis FireStick Fixer > Your launcher > Accueil.
